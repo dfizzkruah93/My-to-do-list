@@ -1,78 +1,163 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-#  My-to-do-list
+<div align="center">
 
-This project is part of the 2nd Module 2 Block of Microverse curriculum. The main objective is to use webpack to bundle JavaScript, learn how to use proper ES6 syntax, use ES6 modules to write modular JavaScript, and learn how to use JavaScript objects and arrays and dynamically modify the DOM and add basic events. This will follow professional guidelines in responsive design.
+  <h3><b>TO DO List</b></h3>
 
-This project will be a basic website that allows users to add, modify and remove a list of To Do tasks.
+</div>
 
-##[Live]()
+<!-- TABLE OF CONTENTS -->
 
-## Built With
+# 📗 Table of Contents
 
-- Html/Css
-- JavaScript
-- Webpack
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 TO DO List ](#-to-do-list-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [📝 License ](#-license-)
 
-## Additional Tools
+<!-- PROJECT DESCRIPTION -->
 
-- Webhint
-- Stylelint
-- Eslint 
+# 📖 TO DO List <a name="about-project"></a>
 
-## Test
-To track linter errors locally follow these steps:  
+**TO DO List** is a tool that helps to organize your day.
 
-Download all the dependencies run:
-```
-npm install
-```
-Track HTML linter errors run:
-```
-npx hint .
-```
-Track CSS linter errors run:
-```
-npx stylelint "**/*.{css,scss}"
-```
-Track JavaScript linter errors run:
-```
-npx eslint .
-```
-## Run webpack server
-```
-npm run start
-```
-## Run build
-```
-npm run build
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a></li>
+    <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+  </ul>
+</details>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+- **Add and remove a task**
+- **Check a task to completed**
+- **Data stored to local storage**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://andrianarivo.github.io/todolist/dist/index.html)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- `NodeJS`
+- `Dart Sass`
+- `VSCode`
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
 ```
 
-## Authors
+### Install
 
-👤 **George D. Kruah**
+Install this project with:
+
+```sh
+  cd my-project
+  yarn install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  yarn start
+```
+
+### Deployment
+
+You can deploy this project by pushing to your own `github page`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **George**
+
 
 - GitHub: [@dfizzkruah93](https://github.com/dfizzkruah93)
 - LinkedIn: [george-d-kruah-2775ab180](https://linkedin.com/in/george-d-kruah-2775ab180)
-- Twitter: [@DKruah](https://github.com/Kruah)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Use database**
+- [ ] **Login**
+- [ ] **Backlog of tasks**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
 
 
-## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page]().
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
 
-## Show your support
+## ⭐️ Show your support <a name="support"></a>
 
-Give a ⭐️ if you like this project!
+If you like this project consider adding a ⭐️
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- This project is part of week 1 of module 2 in the Microverse study program.
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to Code Reviewers for the insightful feedback.
-- A great thanks to My coding partners, morning session team, and standup team Partners for their contributions.
+<!-- LICENSE -->
 
-## 📝 License
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
