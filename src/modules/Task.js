@@ -1,9 +1,7 @@
-export default class TaskStore {
+export default class Task {
+  constructor(index = 1, description, completed = false) {
+    this.description = description;
+    this.completed = completed;
+    this.index = index;
+  }
 }
-
-getNextIndex() {
-  return this.tasksArray.length;
-  return this.tasksArray.length + 1;
-}
-
-addTask(task) {
