@@ -1,49 +1,41 @@
 {
-  "name": "webpack-template",
+  "name": "webpack-pro",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack serve --open"
+    "start": "webpack serve --open",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrianarivo/webpack-template.git"
+    "url": "git+https://github.com/waelelsafty07/webpack.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andrianarivo/webpack-template/issues"
+    "url": "https://github.com/waelelsafty07/webpack/issues"
   },
-  "homepage": "https://github.com/andrianarivo/webpack-template#readme",
+  "homepage": "https://github.com/waelelsafty07/webpack#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
     "html-webpack-plugin": "^5.5.1",
-    "postcss": "^8.4.23",
-    "postcss-loader": "^7.3.0",
-    "sass": "^1.62.1",
-    "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
-    "webpack-dev-server": "^4.13.3",
-    "babel-eslint": "10.x",
-    "eslint": "7.x",
-    "eslint-config-airbnb-base": "14.x",
-    "eslint-plugin-import": "2.x",
-    "hint": "7.x",
-    "stylelint": "13.x",
-    "stylelint-config-standard": "21.x",
-    "stylelint-csstree-validator": "1.x",
-    "stylelint-scss": "3.x"
+    "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.4.0",
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3"
+    "lodash": "^4.17.21"
   }
 }
