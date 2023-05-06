@@ -20,9 +20,6 @@
   },
   "ignorePatterns": [
     "dist/",
-    "build/",
-    "webpack.config.js/",
-    "node.modules/",
-    "webpack-todo-list/src/font_awesome/"
+    "build/"
   ]
 }

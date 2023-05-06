@@ -1,12 +1,24 @@
 import './style.css';
-import './font_awesome/css/all.css';
-import { clearAllCompletedTask, addData, populateUI } from './modules/events.js';
+import TodoStore from './modules/TodoStore.js';
+import addTodo from './modules/AddTodo.js';
+import listOfTodos from './modules/RenderTodos.js';
+import editTodo from './modules/EditTodo.js';
 
-const clearAll = document.querySelector('#clear');
-clearAll.addEventListener('click', clearAllCompletedTask);
+const todoStore = new TodoStore();
 
-const dataEntry = document.querySelector('.dataEntry');
-dataEntry.addEventListener('keypress', addData);
+listOfTodos(todoStore);
 
-// Window Load event
-window.addEventListener('load', populateUI);
+// ADD TODO
+document.addEventListener('keydown', (event) => {
+  const { target } = event;
+
+  if (target.classList.contains('todo-input')) {
+    if (event.key === 'Enter') {
+      addTodo(todoStore, target.value);
+      target.value = '';
+    }
+  }
+});
+
+// EDIT TODO
+editTodo(todoStore);

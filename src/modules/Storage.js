@@ -1,7 +1,7 @@
-const getTasks = () => JSON.parse(localStorage.getItem('tasks')) || [];
+const getTodos = () => JSON.parse(localStorage.getItem('todos')) || [];
 
-const saveTasks = (tasksArray) => {
-  localStorage.setItem('tasks', JSON.stringify(tasksArray));
+const setTodos = (tasksArray) => {
+  localStorage.setItem('todos', JSON.stringify(tasksArray));
 };
 
-export { getTasks, saveTasks };
+export { getTodos, setTodos };

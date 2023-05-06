@@ -1,107 +1,109 @@
-@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: rgb(189, 189, 231);
+  font-family: sans-serif;
 }
 
-#clear {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding: 25px;
-  background: rgb(158, 158, 207);
+.container {
+  max-width: 600px;
+  margin: 200px auto;
+  box-shadow: 0 0 5px #787878;
 }
 
-section {
-  width: 100%;
+ul {
+  list-style: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-form {
+li {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
   display: flex;
-  flex-direction: column;
 }
 
-.input-div {
-  padding: 15px;
-  border-bottom: 1px solid #d0d0d0;
+.card-header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-input {
+.todo-input {
+  padding: 6px;
+  width: 96%;
+}
+
+.todo-input::placeholder {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.todo-input,
+.todo-input:focus {
+  outline: none;
   border: none;
-  padding: 15px;
-  font-style: oblique;
-  font-size: 18px;
-  border-bottom: 1px solid #d0d0d0;
-  color: rgb(136, 136, 209);
 }
 
-p {
-  padding: 10px;
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#clear:hover {
+.todo div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clear {
+  text-align: center;
+  color: #787878;
+  background-color: #dddddd9c;
   cursor: pointer;
+  display: block;
+}
+
+.clear:hover {
+  text-decoration: underline;
+  color: #000;
 }
 
 i {
-  float: right;
+  color: gray;
 }
 
-#header {
-  font-weight: bold;
-  padding: 15px;
-  color: rgb(136, 136, 209);
+.normal-icons:hover {
+  cursor: pointer;
+  color: #000;
 }
 
-.listContent {
-  flex: 2;
-  border: none;
-  margin: 18px 0;
-  color: rgb(136, 136, 209);
+.todo-input-icon {
+  font-size: 16px;
+  rotate: 90deg;
 }
 
-.main-div {
-  margin: 100px 100px;
-  width: 40vw;
-  font-family: Poppins, serif;
-  font-size: 18px;
-  background-color: #fff;
-}
-
-.listContent-disable {
+.checked {
   text-decoration: line-through;
+}
+
+.edit-todo-input {
+  outline: none;
+  border: none;
+  font-style: italic;
+}
+
+.remove-icon {
+  text-decoration: none;
+}
+
+.remove-icon:hover {
   color: red;
-}
-
-.fa-solid,
-.fas {
-  font-family: sans-serif;
-  font-weight: 900;
-  color: rgb(112, 111, 205);
-}
-
-.fa-trash-alt {
-  color: red;
-}
-
-.remove-icon-active {
-  visibility: hidden;
-}
-
-.icon2 {
-  visibility: hidden;
-}
-
-.changeBg {
-  background-color: #efefe3;
-}
-
-.show {
-  visibility: visible;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
 }
