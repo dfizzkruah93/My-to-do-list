@@ -1,55 +1,46 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'development',
   output: {
-    filename: 'main.js',
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),
-  ],
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/index.html',
+    // filename: 'index.html',
+    // title: 'Webpack Todo List',
+    // inject: 'body',
+
+  })],
+
   module: {
     rules: [
       {
-        test: /\.scss$/i,
-        use: [
-          {
-            // inject CSS to page
-            loader: 'style-loader',
-          },
-          {
-            // translates CSS into CommonJS modules
-            loader: 'css-loader',
-          },
-          {
-            // Run postcss actions
-            loader: 'postcss-loader',
-            options: {
-              // `postcssOptions` is needed for postcss 8.x;
-              // if you use postcss 7.x skip the key
-              postcssOptions: {
-                // postcss plugins, can be exported to postcss.config.js
-                plugins: function () {
-                  return [require('autoprefixer')];
-                },
-              },
-            },
-          },
-          {
-            // compiles Sass to CSS
-            loader: 'sass-loader',
-          },
-        ],
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+
     ],
+
   },
+
   devServer: {
-    static: './dist',
+    static: path.resolve(__dirname, 'dist'),
+
   },
+
+  mode: 'development',
+
 };

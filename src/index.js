@@ -1,39 +1,12 @@
-import addTask from './modules/addTask.js';
-import editTask from './modules/editTask.js';
-import listOfTasks from './modules/listOfTasks.js';
-import removeTask from './modules/removeTask.js';
-import TaskStore from './modules/TaskStore.js';
-import './style.scss';
+import './style.css';
+import './font_awesome/css/all.css';
+import { clearAllCompletedTask, addData, populateUI } from './modules/events.js';
 
-const taskStore = new TaskStore();
+const clearAll = document.querySelector('#clear');
+clearAll.addEventListener('click', clearAllCompletedTask);
 
-listOfTasks(taskStore);
+const dataEntry = document.querySelector('.dataEntry');
+dataEntry.addEventListener('keypress', addData);
 
-// ADD TASK
-document.addEventListener('keydown', (event) => {
-  const { target } = event;
-  if (target.id === 'add-new-task') {
-    if (event.key === 'Enter') {
-      addTask(taskStore, target.value);
-      target.value = '';
-    }
-  }
-});
-
-document.addEventListener('click', (event) => {
-  const { target } = event;
-
-  // EDIT TASK
-  if (target.classList.contains('task-item')) {
-    editTask(taskStore, target);
-  }
-  if (target.classList.contains('task-title')) {
-    const parent = target.parentNode.parentNode;
-    editTask(taskStore, parent);
-  }
-
-  // REMOVE TASK
-  if (target.classList.contains('delete-task')) {
-    removeTask(taskStore, target.id);
-  }
-});
+// Window Load event
+window.addEventListener('load', populateUI);
